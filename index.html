@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVA Green Campus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="#home">REVA <span>GREEN</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#initiatives">Initiatives</a></li>
+                <li><a href="#tips">Green Tips</a></li>
+                <li><a href="#challenge">Challenge</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+            <button id="themeButton" class="theme-button">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">REVA UNIVERSITY • SUSTAINABLE FUTURE</p>
+                <h1>Small Steps.<br><span>Greener Campus.</span></h1>
+                <p>Let's make our campus cleaner, greener and more sustainable.
+                   Every student can make a difference.</p>
+                <a class="primary-button" href="#initiatives">Explore Our Initiatives</a>
+            </div>
+            <div class="hero-art" aria-label="Green campus illustration">
+                <div class="sun"></div><div class="hill hill-one"></div>
+                <div class="hill hill-two"></div><div class="tree tree-one">🌳</div>
+                <div class="tree tree-two">🌲</div><div class="campus-building">REVA</div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div><strong class="counter" data-target="100">0</strong><span>Green Ideas</span></div>
+            <div><strong class="counter" data-target="50">0</strong><span>Campus Activities</span></div>
+            <div><strong class="counter" data-target="1">0</strong><span>Shared Planet</span></div>
+        </section>
+
+        <section class="section" id="initiatives">
+            <div class="section-heading">
+                <p class="eyebrow">OUR CAMPUS, OUR RESPONSIBILITY</p>
+                <h2>Green Campus Initiatives</h2>
+                <p>Simple actions that support a healthier campus environment.</p>
+            </div>
+            <div class="card-grid">
+                <article class="info-card"><div class="card-icon">☀️</div><h3>Solar Energy</h3>
+                    <p>Encourage clean energy and switch off lights and devices when they are not needed.</p></article>
+                <article class="info-card"><div class="card-icon">♻️</div><h3>Waste Management</h3>
+                    <p>Separate wet and dry waste, reuse materials and avoid single-use plastics.</p></article>
+                <article class="info-card"><div class="card-icon">💧</div><h3>Water Conservation</h3>
+                    <p>Use water carefully and report leaking taps around the campus.</p></article>
+                <article class="info-card"><div class="card-icon">🌱</div><h3>Plant More Trees</h3>
+                    <p>Care for campus plants and take part in tree-planting activities.</p></article>
+            </div>
+        </section>
+
+        <section class="calculator-section">
+            <div>
+                <p class="eyebrow">BE AWARE OF YOUR IMPACT</p>
+                <h2>Eco Calculator</h2>
+                <p>Estimate the number of plastic bottles you could avoid by using a reusable bottle.</p>
+            </div>
+            <div class="calculator-box">
+                <label for="bottles">Disposable bottles avoided per week</label>
+                <input type="number" id="bottles" min="0" max="1000" value="5">
+                <button class="primary-button" id="calculateButton">Calculate</button>
+                <p id="ecoResult" class="result">You could avoid 260 bottles in a year!</p>
+            </div>
+        </section>
+
+        <section class="section tips-section" id="tips">
+            <div class="section-heading">
+                <p class="eyebrow">A LITTLE CHANGE EVERY DAY</p>
+                <h2>Green Tip of the Moment</h2>
+            </div>
+            <div class="tip-box">
+                <p id="tipText">Carry a reusable water bottle instead of buying disposable plastic bottles.</p>
+                <button class="outline-button" id="newTipButton">Show Another Tip</button>
+            </div>
+        </section>
+
+        <section class="challenge-section" id="challenge">
+            <div>
+                <p class="eyebrow">TAKE ACTION TODAY</p>
+                <h2>Daily Green Challenge</h2>
+                <p>Choose one small action and make it part of your routine.</p>
+            </div>
+            <div class="challenge-box">
+                <p id="challengeText">Bring a reusable bottle to college today.</p>
+                <button class="primary-button" id="challengeButton">Give Me a Challenge</button>
+            </div>
+        </section>
+
+        <section class="section quiz-section" id="quiz">
+            <div class="section-heading">
+                <p class="eyebrow">TEST YOUR KNOWLEDGE</p>
+                <h2>Environmental Quiz</h2>
+            </div>
+            <div class="quiz-box">
+                <h3>Which of these is the best way to reduce plastic waste?</h3>
+                <div class="quiz-options">
+                    <button class="quiz-option">Use a reusable bottle</button>
+                    <button class="quiz-option">Use more disposable cups</button>
+                    <button class="quiz-option">Throw plastic in mixed waste</button>
+                </div>
+                <p id="quizResult" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>REVA <span>GREEN</span></h2>
+        <p>Learn • Act • Sustain</p>
+        <small>Student website project | Created for educational purposes</small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
